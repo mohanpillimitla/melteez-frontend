@@ -1,4 +1,4 @@
-const localhost = "https://melteez.herokuapp.com/";
+const localhost = "https://melteez.herokuapp.com";
 
 const apiURL = "/api";
 
