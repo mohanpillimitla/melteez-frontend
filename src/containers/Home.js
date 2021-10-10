@@ -10,7 +10,7 @@ import {
   Responsive,
   Segment,
   Sidebar,
-  Visibility
+  Visibility,
 } from "semantic-ui-react";
 
 const getWidth = () => {
@@ -41,7 +41,7 @@ class DesktopContainer extends Component {
 }
 
 DesktopContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 class MobileContainer extends Component {
@@ -67,7 +67,7 @@ class MobileContainer extends Component {
 }
 
 MobileContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const ResponsiveContainer = ({ children }) => (
@@ -78,7 +78,7 @@ const ResponsiveContainer = ({ children }) => (
 );
 
 ResponsiveContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const HomepageLayout = () => (
@@ -90,17 +90,18 @@ const HomepageLayout = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               We Help Companies and Companions
             </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
-            </p>
+            <Image
+              bordered
+              rounded
+              size="large"
+              src="https://thumbs.dreamstime.com/z/chocolate-pralines-17718234.jpg"
+            />
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Make Bananas That Can Dance
+              We Make chocolates That Can Dance
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered.
+              chocolates can be bioengineered.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -108,7 +109,7 @@ const HomepageLayout = () => (
               bordered
               rounded
               size="large"
-              src="/images/wireframe/white-image.png"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vT1iPzCXaQh_LmW1Je9SPmh7-5dSCdT8zg&usqp=CAU"
             />
           </Grid.Column>
         </Grid.Row>
@@ -135,7 +136,9 @@ const HomepageLayout = () => (
               "I shouldn't have gone with their competitor."
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              <Image avatar src="/images/avatar/large/nan.jpg" />
+              <Image
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vT1iPzCXaQh_LmW1Je9SPmh7-5dSCdT8zg&usqp=CAU"
+              />
               <b>Nan</b> Chief Fun Officer Acme Toys
             </p>
           </Grid.Column>
@@ -165,12 +168,12 @@ const HomepageLayout = () => (
           <a href="#case-studies">Case Studies</a>
         </Divider>
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Did We Tell You About Our Bananas?
+          Did We Tell You About Our chocolates?
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           Yes I know you probably disregarded the earlier boasts as non-sequitur
           filler content, but it's really true. It took years of gene splicing
-          and combinatory DNA research, but our bananas can really dance.
+          and combinatory DNA research, but our chocolates can really dance.
         </p>
         <Button as="a" size="large">
           I'm Still Quite Interested
