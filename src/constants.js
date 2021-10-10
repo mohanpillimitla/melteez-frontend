@@ -3,6 +3,7 @@ const localhost = "https://melteez.herokuapp.com";
 const apiURL = "/api";
 
 export const endpoint = `${localhost}${apiURL}`;
+export const localhost;
 
 export const productListURL = `${endpoint}/products/`;
 export const productDetailURL = id => `${endpoint}/products/${id}/`;
